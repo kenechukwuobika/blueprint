@@ -171,6 +171,14 @@ body{
     z-index: 5;
 }
 
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* opacity: 0.97; */
+    z-index: 15;
+}
+
 .navbar__logo{
     height: 5.2rem;
     display: block;
@@ -478,7 +486,7 @@ body{
     position: relative;
     box-shadow: var(--box-shadow);
     transition: all .3s ease-in;
-    transform: translateX(20rem);
+    /* transform: translateX(20rem); */
 }
 
 .slider__images:not(:last-child){

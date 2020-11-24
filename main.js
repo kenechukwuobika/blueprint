@@ -35,4 +35,12 @@ document.querySelector('.info__bar--icon').addEventListener("click", function(e)
     document.querySelector('.info__bar').style.display = "none";
 });
 
+window.addEventListener("scroll", function() {
+    if (window.pageYOffset > header.offsetTop) {
+        document.querySelector('.info__bar').classList.add( 'sticky');
+       } else {
+        document.querySelector('.info__bar').classList.remove( 'sticky');
+     }
+})
+
 
