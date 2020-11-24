@@ -83,39 +83,39 @@ body{
     flex: 0 0 75%;
 }
 
-div.mb-sm, p.mb-sm, span.mb-sm, h3.mb-sm{
+.mb-sm, div.mb-sm, p.mb-sm, span.mb-sm, h3.mb-sm{
     margin-bottom: 2rem;
 }
 
-div.mb-md, p.mb-md, span.mb-md, h3.mb-md{
+.mb-md, div.mb-md, p.mb-md, span.mb-md, h3.mb-md{
     margin-bottom: 8rem;
 }
 
-div.mb-lg, p.mb-lg, span.mb-lg, h3.mb-lg{
+.mb-lg, div.mb-lg, p.mb-lg, span.mb-lg, h3.mb-lg{
     margin-bottom: 24rem;
 }
 
-div.mr-sm, p.mr-sm, span.mr-sm, h3.mr-sm{
+.mr-sm, div.mr-sm, p.mr-sm, span.mr-sm, h3.mr-sm{
     margin-right: 2rem;
 }
 
-div.mr-md, p.mr-md, span.mr-md, h3.mr-md{
+.mr-md, div.mr-md, p.mr-md, span.mr-md, h3.mr-md{
     margin-right: 8rem;
 }
 
-div.mr-lg, p.mr-lg, span.mr-lg, h3.mr-lg{
+.mr-lg, div.mr-lg, p.mr-lg, span.mr-lg, h3.mr-lg{
     margin-right: 24rem;
 }
 
-div.ml-sm, p.ml-sm, span.ml-sm, h3.ml-sm{
+.ml-sm, div.ml-sm, p.ml-sm, span.ml-sm, h3.ml-sm{
     margin-left: 2rem;
 }
 
-div.ml-md, p.ml-md, span.ml-md, h3.ml-md{
+.ml-md, div.ml-md, p.ml-md, span.ml-md, h3.ml-md{
     margin-left: 8rem;
 }
 
-div.ml-lg, p.ml-lg, span.ml-lg, h3.ml-lg{
+.ml-lg, div.ml-lg, p.ml-lg, span.ml-lg, h3.ml-lg{
     margin-left: 24rem;
 }
 
@@ -144,7 +144,13 @@ div.ml-lg, p.ml-lg, span.ml-lg, h3.ml-lg{
 }
 
 .navbar__logo{
-    height: 5.2rem
+    height: 5.2rem;
+    display: block;
+}
+
+.navbar__logo--lg{
+    display: none;
+    align-self: center;
 }
 
 .navbar__list{
@@ -362,6 +368,7 @@ div.ml-lg, p.ml-lg, span.ml-lg, h3.ml-lg{
     width: 100%;
     overflow: hidden;
     justify-content: center;
+    align-items: center;
     z-index: 2;
 }
 
@@ -369,12 +376,8 @@ div.ml-lg, p.ml-lg, span.ml-lg, h3.ml-lg{
     position: relative;
     box-shadow: var(--box-shadow);
     transition: all .3s ease-in;
-    /* transform: translateX(50rem); */
 }
 
-.slider__images:not(:last-child){
-    margin-right: 100rem;
-}
 
 .dots__list{
     display: flex;
@@ -833,9 +836,9 @@ div.ml-lg, p.ml-lg, span.ml-lg, h3.ml-lg{
 }
 
 .instruction__item{
-    font-size: 22px;
+    font-size: 2.2rem;
     color: #8a94a6;
-    line-height: 26px;
+    line-height: 2.6rem;
     list-style: none;
 }
 
@@ -885,15 +888,6 @@ div.ml-lg, p.ml-lg, span.ml-lg, h3.ml-lg{
     margin-bottom: 8rem;
 }
 
-@media only screen and (max-width: 1400px){
-    .navbar{
-        display: none;
-    }
-    .videos{
-        flex-direction: column;
-    }
-}
-
 .heading__main{
     font-weight: 700;
     font-size: 3.6rem;
@@ -925,7 +919,248 @@ div.ml-lg, p.ml-lg, span.ml-lg, h3.ml-lg{
 
 #trial{
     background-color: var(--blue-dark);
-    height: 50rem;
     margin-top: -6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
 }
 
+h3.heading__trial{
+    color: var(--white);
+}
+
+.trial__text{
+    font-size: 1.6rem;
+    color: var(--white);
+    line-height: 2.1rem;
+    margin-bottom: 2rem
+}
+
+.trial__btn{
+    background-color: var(--blue);
+    color: var(--white);
+    width: 25%;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+#footer{
+    padding: 6rem;
+}
+
+.footer__row{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__sitemap{
+    list-style: none;
+}
+
+.people__cta--btn{
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.footer__links {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #8a94a6;
+    letter-spacing: 0;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+}
+
+.footer__sitemap h5{
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: var(--blue-dark);
+    line-height: 2.8rem;
+    margin-bottom: 1.7rem;
+    text-transform: uppercase;
+}
+
+.footer__text{
+    font-size: 24px;
+    color: var(--purple);
+    max-width: 42.5rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.footer__buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__signin--btn{
+    color: var(--blue);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: block;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+}
+
+.footer__signup--btn{
+    background-color: var(--blue);
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+    color: var(--white);
+    border: none;
+    width: 25rem;
+}
+
+.footer__signin--btn:hover{
+    color: var(--blue-dark);
+}
+
+#bottom_bar{
+    padding: 2rem;
+    background-color: var(--blue);
+    color: var(--white);
+    display: flex;
+}
+
+#bottom_bar p{
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.bottom__bar--left{
+    margin-left: 20rem;
+    margin-right: 40rem;
+}
+
+
+
+@media only screen and (max-width: 1800px){
+    .instruction__item{
+        font-size: 1.8rem;
+    }
+}
+
+
+@media only screen and (max-width: 1400px){
+    .row{
+        flex-wrap: wrap;
+    }
+
+    html {
+        font-size: 57.2%;
+        
+    }
+}
+
+@media only screen and (max-width: 1270px){
+    .sales__image--lg{
+        width: 100rem;
+    }
+
+    #faq{
+        margin-top: 100rem;
+    }
+
+    .row{
+        flex-wrap: wrap;
+    }
+
+    .navbar__logo--lg{
+        display: block;
+    }
+
+    .navbar{
+        justify-content: center;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .navbar__logo{
+        display: none;
+    }
+    .sales__compare{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sales__left{
+        margin-right: 0;
+        margin-bottom: 4rem;
+    }
+
+    .collapse{
+        display: none;
+    }
+
+    .green-bg:before{
+        border-width: 345px 345px 345px 0;
+        margin-right: 0;
+    }
+    
+    html {
+        font-size: 52.7%;
+        
+    }
+}
+
+@media only screen and (max-width: 1000px){
+
+    #faq{
+        margin-top: 180rem;
+    }
+
+    .courses__row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .courses__card{
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 4rem;
+    }
+
+    .slider__images{
+        width: 100rem;
+    }
+
+    .instructions .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .instruction__card{
+        width: 40rem;
+    }
+
+    .instruction__card>:not(:last-child){
+        width: 40rem;
+    }
+
+    .instruction__right{
+        margin-left: 0;
+    }
+
+    .instruction__image{
+        align-self: center;
+    }
+}
