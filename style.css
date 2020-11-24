@@ -947,6 +947,7 @@ h3.heading__trial{
 }
 
 #footer{
+    background-color: var(--white);
     padding: 6rem;
 }
 
@@ -1364,10 +1365,69 @@ h3.heading__trial{
     .sub__text--full{
         width: 40rem;
     }
+
+    .testimonial__image{
+        width: 50rem;
+    }
 }
 
 @media only screen and (max-width: 550px){
+    .navbar__logo--lg{
+        width: 45rem;
+    }
+
+    .testimonials__message{
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+        max-width: 50rem;
+    }
+
     html{
         font-size: 35%;
     }
+
+    .testimonial__image{
+        width: 40rem;
+    }
+
+    .people__cta--image{
+        width: 50rem;
+    }
 }
+
+@media only screen and (max-width: 400px){
+    .navbar__logo--lg{
+        width: 30rem;
+    }
+
+    html{
+        font-size: 32.7%;
+    }
+
+    .sales__image{
+        width: 40rem;
+    }
+
+    .footer__text{font-size: 2rem;}
+
+    .testimonial__image{
+        width: 30rem;
+    }
+    
+    
+
+    .hero__heading{
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+    }
+
+    .hero__buttons{
+        flex-direction: column;
+    }
+
+    .hero__btn--1{
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+}
+
