@@ -1171,6 +1171,14 @@ h3.heading__trial{
 }
 
 
+@media only screen and (max-width: 1500px){
+   
+
+    .sales__left{
+        margin-right: 20rem;
+    }
+}
+
 @media only screen and (max-width: 1400px){
     .row{
         flex-wrap: wrap;
@@ -1180,6 +1188,7 @@ h3.heading__trial{
         font-size: 57.2%;
         
     }
+
 }
 
 
@@ -1327,6 +1336,10 @@ h3.heading__trial{
 
 @media only screen and (max-width: 1000px){
 
+    .sales__left{
+        margin-right: 20rem;
+    }
+
     .navbar__logo--lg{
         width: 60rem;
     }
@@ -1452,6 +1465,7 @@ h3.heading__trial{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        padding: 2rem 15rem;
     }
 
     .bottom__bar--left{
@@ -1467,7 +1481,7 @@ h3.heading__trial{
 }
 
 @media only screen and (max-width: 870px){
-    
+
     .people__cta--image{
         width: 70rem;
     }
@@ -1594,6 +1608,10 @@ h3.heading__trial{
         width: 30rem;
     }
     
+    .navbar__dropdown--icons{
+        width: 1rem;
+        height: 1rem;
+    }
     
 
     .hero__heading{
