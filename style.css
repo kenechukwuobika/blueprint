@@ -1143,7 +1143,15 @@ h3.heading__trial{
     }
 
     .slider__images{
-        width: 100rem;
+        width: 80rem;
+    }
+
+    .row-full{
+        flex-direction: column;
+    }
+
+    .centered-content{
+        margin-bottom: 2rem;
     }
 
     .instructions .content{
@@ -1166,5 +1174,55 @@ h3.heading__trial{
 
     .instruction__image{
         align-self: center;
+    }
+
+    html{
+        font-size: 48.9%;
+    }
+
+    .sales__image--lg{
+        width: 80rem;
+    }
+}
+
+@media only screen and (max-width: 870px){
+    .footer__row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #testimonials{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .footer__row>*{
+        margin-bottom: 4rem;
+    }
+
+    .container-full{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__text{width: 100%;}
+
+    .bottom__bar--left{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 4rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    html{
+        font-size: 35%;
     }
 }
