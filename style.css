@@ -135,12 +135,35 @@ body{
 
 #header{
     background-color: var(--white);
+    position: relative;
 }
-  
+
+.menu__toggle{
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 9rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+
+.menu__image--close{
+    display: none;
+}
+
+.menu__toggle{
+    display: none;
+}
+
 .navbar{
     display: flex;
     padding: 1.7rem 17.8rem 1rem 19rem;
     justify-content: space-between;
+    
 }
 
 .navbar__logo{
@@ -1068,6 +1091,11 @@ h3.heading__trial{
 }
 
 @media only screen and (max-width: 1270px){
+
+    .menu__toggle{
+        display: flex;
+    }
+
     .sales__image--lg{
         width: 100rem;
     }
@@ -1112,6 +1140,22 @@ h3.heading__trial{
 
     .collapse{
         display: none;
+        position: absolute;
+        background-color: #F1F1F1;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .navbar__btn{
+        width: 100%;
+        
+    }
+
+    .navbar__item{
+        padding: 2rem 1rem;
     }
 
     .what-members-get:before {
@@ -1307,7 +1351,7 @@ h3.heading__trial{
     }
 
     .slider__images{
-        width: 50rem;
+        width: 65rem;
     }
 
     .sales__image--lg{
@@ -1369,12 +1413,14 @@ h3.heading__trial{
     .testimonial__image{
         width: 40rem;
     }
-}
 
-@media only screen and (max-width: 550px){
     .navbar__logo--lg{
         width: 45rem;
     }
+}
+
+@media only screen and (max-width: 550px){
+    
 
     .testimonials__message{
         font-size: 2.4rem;
@@ -1392,6 +1438,10 @@ h3.heading__trial{
 
     .people__cta--image{
         width: 50rem;
+    }
+
+    .menu__image {
+        width: 3rem;
     }
 }
 
