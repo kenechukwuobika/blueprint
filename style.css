@@ -1341,7 +1341,7 @@ h3.heading__trial{
 @media only screen and (max-width: 1000px){
 
     .sales__left{
-        margin-right: 20rem;
+        margin-right: 0rem;
     }
 
     .navbar__logo--lg{
@@ -1635,7 +1635,7 @@ h3.heading__trial{
     }
 }
 
-@media only screen and (max-width: 350px){
+@media only screen and (max-width: 360px){
 
     html{
         font-size: 25%;
