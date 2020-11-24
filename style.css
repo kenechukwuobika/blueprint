@@ -478,6 +478,11 @@ body{
     position: relative;
     box-shadow: var(--box-shadow);
     transition: all .3s ease-in;
+    transform: translateX(20rem);
+}
+
+.slider__images:not(:last-child){
+   margin-right: 20rem;
 }
 
 
