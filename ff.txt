@@ -32,7 +32,6 @@ body{
     background-image: url('images/hdr_bg_dots.png');
     color: #667291;
     overflow-x: hidden;
-    z-index: -3;
 }
 
 .row{
@@ -352,7 +351,6 @@ div.ml-lg, p.ml-lg, span.ml-lg, h3.ml-lg{
     flex-direction: column;
     margin-bottom: -20rem;
     background-color: var(--white);
-    z-index: -2;
 }
 
 .img__slider{
@@ -411,7 +409,6 @@ div.ml-lg, p.ml-lg, span.ml-lg, h3.ml-lg{
     /* clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 94%, 80% 98%, 50% 100%, 20% 98%, 0 93%, 0% 35%, 0 0);
     -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 94%, 80% 98%, 50% 100%, 20% 98%, 0 93%, 0% 35%, 0 0); */
     margin-bottom: 30rem;
-    z-index: -2;
 
 }
 
@@ -526,7 +523,6 @@ div.ml-lg, p.ml-lg, span.ml-lg, h3.ml-lg{
 #testimonials{
     display: flex;
     background-color: var(--white);
-    z-index: -2;
 }
 
 .testimonials__details{
@@ -628,7 +624,6 @@ div.ml-lg, p.ml-lg, span.ml-lg, h3.ml-lg{
     justify-content: center;
     margin-bottom: 8rem;
     background-color: var(--white);
-    z-index: -2;
 }
 
 .sales__shapemix{
