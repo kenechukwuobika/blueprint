@@ -31,6 +31,48 @@ body{
     font-weight: 500;
     background-image: url('images/hdr_bg_dots.png');
     color: #667291;
+    overflow-x: hidden;
+}
+
+.row{
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.col-1-of-2{
+    flex: 0 0 50%;
+}
+
+.col-1-of-2:not(:last-child){
+    margin-right: 6rem;
+}
+
+.col-1-of-3{
+    flex: 0 0 30%;
+}
+
+.col-1-of-3:not(:last-child){
+    margin-right: 6rem;
+}
+
+.col-2-of-3{
+    flex: 0 0 60%;
+}
+
+.col-2-of-3:not(:last-child){
+    margin-right: 6rem;
+}
+
+.col-1-of-4{
+    flex: 0 0 25%;
+}
+
+.col-2-of-4{
+    flex: 0 0 50%;
+}
+
+.col-3-of-4{
+    flex: 0 0 75%;
 }
 
 .mb-sm{
@@ -46,12 +88,14 @@ body{
 }
 
 .container{
+    width: inherit;
     padding: 0 40%;
     display: flex;
     justify-content: center;
 }
 
 .container-full{
+    width: inherit;
     padding: 0 10%;
     display: flex;
     justify-content: center;
@@ -770,6 +814,21 @@ body{
 
 .videos{
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videos > *{
+    flex: 0 0 25%;
+}
+
+.videos > *:not(:last-child){
+    margin-right: 3rem;
+}
+
+.video__item{
+    width: 350;
+    height: 238;
 }
 
 .video__load--btn{
