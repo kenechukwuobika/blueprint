@@ -1505,6 +1505,10 @@ h3.heading__trial{
     .sales__image--lg{
         width: 50rem;
     }
+
+    .sales__image{
+        width: 50rem;
+    }
     
     .green-bg:before{
         border-width: 24.5rem 24.5rem 24.5rem 0;
@@ -1602,9 +1606,7 @@ h3.heading__trial{
         font-size: 32.7%;
     }
 
-    .sales__image{
-        width: 40rem;
-    }
+    
 
     .footer__text{font-size: 2rem;}
 
