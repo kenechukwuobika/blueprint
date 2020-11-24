@@ -1027,7 +1027,7 @@ h3.heading__trial{
 }
 
 #bottom_bar{
-    padding: 2rem;
+    padding: 2rem 25rem;
     background-color: var(--blue);
     color: var(--white);
     display: flex;
@@ -1043,7 +1043,7 @@ h3.heading__trial{
 
 .bottom__bar--left{
     margin-left: 20rem;
-    margin-right: 40rem;
+    flex: 1;
 }
 
 
@@ -1144,9 +1144,17 @@ h3.heading__trial{
         font-size: 52.7%;
         
     }
+
+    #bottom_bar p{
+        font-size: 1.6rem;
+    }
 }
 
 @media only screen and (max-width: 1000px){
+
+    .navbar__logo--lg{
+        width: 60rem;
+    }
 
     .hero__heading{
         font-size: 4rem;
@@ -1154,7 +1162,7 @@ h3.heading__trial{
     }
 
     #faq{
-        margin-top: 180rem;
+        margin-top: 190rem;
     }
 
     .courses__row{
@@ -1183,7 +1191,22 @@ h3.heading__trial{
     }
 
     .centered-content{
-        margin-bottom: 2rem;
+        
+        margin: 0;
+    }
+
+    .centered-content:not(:last-child){
+        
+        margin-bottom: 8rem;
+    }
+
+    .cta-people-left{
+        display: none;
+    }
+
+    
+    .cta-people-right{
+        display: none;
     }
 
     .instructions .content{
@@ -1215,10 +1238,69 @@ h3.heading__trial{
     .sales__image--lg{
         width: 80rem;
     }
+
+    .people__cta--btn{
+        margin-bottom: 4rem;
+    }
+
+    .footer__row{
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    div.footer__logo {
+        margin-right: 0;
+        margin-bottom: 6rem;
+    }
+
+    .footer__text{
+        max-width: 65.5rem;
+    }
+
+    .footer__sitemap{
+        padding-left: 0;
+        margin-right: 0;
+        margin-bottom: 6rem;
+    }
+
+    .footer__buttons{
+        width: 100%;
+    }
+
+    .footer__signup--btn{
+        width: 100%;
+    }
+
+    #bottom_bar{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottom__bar--left{
+        margin: 0;
+    }
+
+    .bottom__bar--right{
+        margin: 0;
+        margin-bottom: 4rem;
+    }
+
+    
 }
 
 @media only screen and (max-width: 870px){
     
+    .people__cta--image{
+        width: 70rem;
+    }
+
+    .instruction__image {
+        width: 50rem;
+    }
+
     #training{
         margin-bottom: 120rem;
     }
@@ -1250,13 +1332,6 @@ h3.heading__trial{
     
     #faq{
         margin-top: 200rem;
-    }
-
-    .footer__row{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
     }
 
     #testimonials{
