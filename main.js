@@ -43,3 +43,8 @@ document.querySelector('.navbar__drop').addEventListener("click", function(e) {
     
 });
 
+document.querySelector('.info__bar--icon').addEventListener("click", function(e) {
+    document.querySelector('.info__bar').style.display = "none";
+});
+
+

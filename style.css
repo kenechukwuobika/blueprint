@@ -330,7 +330,13 @@ body{
     font-size: 1.8rem;
     line-height: 4.23rem;
     font-weight: 700;
-    margin-bottom: 12rem;
+    display: flex;
+    justify-content: center;
+}
+
+.info__bar--icon{
+    width: 2.5rem;
+    cursor: pointer;
 }
 
 .info__bar--left{
@@ -364,15 +370,13 @@ body{
     background-color: #e9db06;
 }
 
-.info__bar--icon{
-    font-size: 3rem;
-}
 
 .hero{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 12rem;
 }
 
 .hero__heading{
