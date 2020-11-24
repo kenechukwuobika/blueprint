@@ -782,7 +782,7 @@ body{
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 445px 445px 445px 0;
+    border-width: 44.5rem 44.5rem 44.5rem 0;
     /* border-color: transparent #ea4335 transparent transparent; */
     border-color: transparent #fbbc05 transparent transparent;
     position: absolute;
@@ -1105,12 +1105,38 @@ h3.heading__trial{
         margin-bottom: 4rem;
     }
 
+    .sales__shapemix{
+        width: 12rem;
+    }
+
     .collapse{
         display: none;
     }
 
+    .what-members-get:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 39.2rem 0 39.2rem 40.7rem;
+        border-color: transparent transparent transparent #fbbc05;
+        position: absolute;
+        top: -2.8rem;
+        left: 0;
+        z-index: -1;
+    }
+
+    .yellow-bg:before{
+        border-width: 34.5rem 34.5rem 34.5rem 0;
+    }
+    
+    .red-bg:before{
+        border-width: 39.2rem 0 39.2rem 40.7rem;
+    }
+
     .green-bg:before{
-        border-width: 345px 345px 345px 0;
+        border-width: 34.5rem 34.5rem 34.5rem 0;
         margin-right: 0;
     }
     
@@ -1121,6 +1147,11 @@ h3.heading__trial{
 }
 
 @media only screen and (max-width: 1000px){
+
+    .hero__heading{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
 
     #faq{
         margin-top: 180rem;
@@ -1140,6 +1171,7 @@ h3.heading__trial{
         margin-right: 0;
         margin-left: 0;
         margin-bottom: 4rem;
+        width: 70%;
     }
 
     .slider__images{
@@ -1186,6 +1218,40 @@ h3.heading__trial{
 }
 
 @media only screen and (max-width: 870px){
+    
+    #training{
+        margin-bottom: 120rem;
+    }
+
+    .slider__images{
+        width: 50rem;
+    }
+
+    .sales__image--lg{
+        width: 50rem;
+    }
+    
+    .green-bg:before{
+        border-width: 24.5rem 24.5rem 24.5rem 0;
+        margin-right: 0;
+    }
+
+    .red-bg:before{
+        border-width: 29.2rem 0 29.2rem 30.7rem;
+    }
+
+    .yellow-bg:before{
+        border-width: 24.5rem 24.5rem 24.5rem 0;
+    }
+
+    .sales__shapemix{
+        width: 8rem;
+    }
+    
+    #faq{
+        margin-top: 200rem;
+    }
+
     .footer__row{
         flex-direction: column;
         justify-content: center;
@@ -1218,6 +1284,10 @@ h3.heading__trial{
         margin-bottom: 4rem;
         margin-left: 0rem;
         margin-right: 0rem;
+    }
+
+    .sub__text--full{
+        width: 40rem;
     }
 }
 
