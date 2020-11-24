@@ -166,6 +166,11 @@ body{
     
 }
 
+.collapse{
+    display: block;
+    z-index: 5;
+}
+
 .navbar__logo{
     height: 5.2rem;
     display: block;
@@ -185,8 +190,78 @@ body{
     
 }
 
-.navbar__dropdown{
+.navbar__drop:hover .dropdown{
+    display: block;
+}
+
+.block{
+    display: block !important;
+}
+
+
+.none{
+    display: none !important;
+}
+
+.dropdown{
     display: none;
+    position: absolute;
+    top: 70%;
+    left: 35%;
+}
+
+.navbar__dropdown--container{
+    display: flex;
+    background-color: var(--white);
+}
+
+.navbar__dropdown{
+    list-style: none;
+    margin-right: 2rem;
+
+}
+
+.navbar__dropdown--item{
+    padding: 2rem 4rem;
+}
+
+
+.navbar__dropdown--link{
+    text-decoration: none;
+    color: var(--purple);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.navbar__dropdown--link:hover{
+    color: var(--blue);
+}
+
+.navbar__dropdown--title{
+    color: #8A94A6;
+    font-size: 1.6rem;
+}
+ 
+.navbar__dropdown--footer{
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+.navbar__dropdown--icons{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.navbar__dropdown--icons:not(:last-child){
+    margin-right: 1rem;
+}
+
+.navbar__dropdown--footer a{
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
 .navbar__item{
@@ -892,8 +967,8 @@ body{
 }
 
 .video__item{
-    width: 350;
-    height: 238;
+    width: 45rem;
+    
 }
 
 .video__load--btn{
@@ -1071,6 +1146,23 @@ h3.heading__trial{
 }
 
 
+.bottom__bar--icons{
+    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.bottom__bar--icons:not(:last-child){
+    margin-right: 1rem;
+}
+
+.bottom__bar--right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 @media only screen and (max-width: 1800px){
     .instruction__item{
@@ -1090,10 +1182,49 @@ h3.heading__trial{
     }
 }
 
+
 @media only screen and (max-width: 1270px){
+
+    .videos{
+        flex-direction: column;
+    }
+
+    iframe.video__item{
+        margin-right: 0;
+        margin-bottom: 2rem;
+        
+    }
+
+    .navbar__dropdown--footer{
+        display: none;
+    }
+
+    .collapse{
+        display: none;
+    }
 
     .menu__toggle{
         display: flex;
+    }
+
+    .navbar__drop{
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .navbar__dropdown--title{
+        display: none;
+    }
+
+    .dropdown{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .navbar__dropdown--container{
+        background-color: transparent;
+        flex-direction: column;
     }
 
     .sales__image--lg{
@@ -1139,7 +1270,6 @@ h3.heading__trial{
     }
 
     .collapse{
-        display: none;
         position: absolute;
         background-color: #F1F1F1;
         top: 100%;

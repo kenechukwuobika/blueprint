@@ -30,14 +30,55 @@
 
 
                 <ul class="navbar__list collapse">
-                    <li class="navbar__item"><a class="navbar__link" href="https://theblueprint.training/all/" class="nav-link">ALL MODULES</a></li>
-                    <li class="navbar__item"><a class="navbar__link" href="https://theblueprint.training/seo-project-management/" class="nav-link">PM Suite</a></li>
-                    <li class="navbar__item"><a class="navbar__link" href="https://theblueprint.training/reviews/" class="nav-link">RESULTS</a></li>
-                    <li class="navbar__item"><a class="navbar__link" href="https://theblueprint.training/#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link" id="menu-item-dropdown-33">MORE</a>
+                    <li class="navbar__item"><a class="navbar__link" href="#">ALL MODULES</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#">PM Suite</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#">RESULTS</a></li>
+                    <li class="navbar__item navbar__drop"><a class="navbar__link" href="#">MORE <img class="navbar__icon" src="./icons/Icon awesome-caret-down.svg" alt=""></a>
+                    
+                        <div class="dropdown">
+                            <div class="navbar__dropdown--container">
+                            
+                                <ul class="navbar__dropdown navbar__dropdown--1">
+                                    <h5 class="navbar__dropdown--title navbar__dropdown--item">ABOUT</h5>
+                                    <li class="navbar__dropdown--item"><a class="navbar__dropdown--link" href="#">OUR STORY</a></li>
+                                    <li class="navbar__dropdown--item"><a class="navbar__dropdown--link" href="#">BLOG</a></li>
+                                    <li class="navbar__dropdown--item"><a class="navbar__dropdown--link" href="#">THE BLUEPRINT BOOK</a></li>
+                                </ul>
+        
+                                <ul class="navbar__dropdown navbar__dropdown--2">
+                                    <h5 class="navbar__dropdown--title navbar__dropdown--item">PLATFORM</h5>
+                                    <li class="navbar__dropdown--item"><a class="navbar__dropdown--link" href="#">STRATEGY SESSION 🆕</a></li>
+                                    <li class="navbar__dropdown--item"><a class="navbar__dropdown--link" href="#">OUR FRAMEWORK</a></li>
+                                    <li class="navbar__dropdown--item"><a class="navbar__dropdown--link" href="#">WHITE LABEL SERVICES</a></li>
+                                </ul>
+        
+                                <ul class="navbar__dropdown navbar__dropdown--3">
+                                    <h5 class="navbar__dropdown--title navbar__dropdown--item">FREEBIES</h5>
+                                    <li class="navbar__dropdown--item"><a class="navbar__dropdown--link" href="#">SLACK COMMUNITY 💬</a></li>
+                                    <li class="navbar__dropdown--item"><a class="navbar__dropdown--link" href="#">LIVE EVENTS</a></li>
+                                    <li class="navbar__dropdown--item"><a class="navbar__dropdown--link" href="#">FREE TRIAL 🔥</a></li>
+                                </ul>
+                        
+                            </div>
+        
+                            <div class="navbar__dropdown--footer">
+                                <a href="#" class="navbar__dropdown--footer__1">WE WROTE A BOOK</a>
+                                <div class="navbar__dropdown--footer__2">
+                                    <img class="navbar__dropdown--icons" src="./icons/Icon awesome-facebook-f.svg" alt="">
+                                    <img class="navbar__dropdown--icons" src="./icons/Icon feather-instagram.svg" alt="">
+                                    <img class="navbar__dropdown--icons" src="./icons/Icon awesome-twitter.svg" alt="">
+                                    <img class="navbar__dropdown--icons" src="./icons/Icon awesome-youtube.svg" alt="">
+                                </div>
+                                <a href="#" class="navbar__dropdown--footer__3">CONTACT US</a>
+                            </div>
+                        </div>
+                    </li>
                     
             
         
-                    <li class="navbar__item"><a href="https://theblueprint.training/get-started/" class="btn btn__sm navbar__btn navbar__link">Get Started</a></li>
+                    <li class="navbar__item"><a href="#" class="btn btn__sm navbar__btn navbar__link">Get Started</a></li>
+
+                    
                     
                 </ul>
             </nav>
@@ -468,13 +509,11 @@
                     <h3 class="heading__main ">WHAT OUR STUDENTS SAY</h3>
                     <p class="sub__text mb-sm">We’ve helped thousands of marketers improve the quality of their SEO service through process, automation and knowledge.                    </p>
                     
-                    <!-- <div class="container">
-                        <div class="videos">
-                            <iframe class="video__item" width="490" height="334" src="https://www.youtube.com/embed/V0SivJygbcY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <iframe class="video__item" width="490" height="334" src="https://www.youtube.com/embed/bDWA5ldPsCo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <iframe class="video__item" width="490" height="334" src="https://www.youtube.com/embed/juQpr6Q7QYY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div> -->
+                    <div class="videos">
+                        <iframe class="video__item" width="490" height="334" src="https://www.youtube.com/embed/V0SivJygbcY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="video__item" width="490" height="334" src="https://www.youtube.com/embed/bDWA5ldPsCo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="video__item" width="490" height="334" src="https://www.youtube.com/embed/juQpr6Q7QYY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                       
                     <a href="#" class="video__load--btn">LOAD MORE</a>
                 </div>
@@ -537,8 +576,12 @@
                     </div>
 
                     <div class="bottom__bar--right">
-                        <p>CONNECT WITH US</p>
-                        <div class="bottom__bar--icons">
+                        <p class="mr-sm">CONNECT WITH US</p>
+                        <div class="bottom__bar--icons__container">
+                            <img class="bottom__bar--icons" src="./icons/Icon awesome-facebook-f.svg" alt="">
+                            <img class="bottom__bar--icons" src="./icons/Icon feather-instagram.svg" alt="">
+                            <img class="bottom__bar--icons" src="./icons/Icon awesome-twitter.svg" alt="">
+                            <img class="bottom__bar--icons" src="./icons/Icon awesome-youtube.svg" alt="">
 
                         </div>
                     </div>

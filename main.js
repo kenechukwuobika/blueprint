@@ -28,3 +28,18 @@ document.querySelector('.menu__image--close').addEventListener("click", function
     this.style.display = 'none';
 });
 
+
+document.querySelector('.navbar__drop').addEventListener("click", function(e) {
+    e.preventDefault();
+    if(document.querySelector('.dropdown').classList.contains('block')) {
+        document.querySelector('.dropdown').classList.remove( 'block');
+        document.querySelector('.dropdown').classList.add( 'none');
+    }
+    else{
+        document.querySelector('.dropdown').classList.remove( 'none');
+        if(document.querySelector('.dropdown').classList.add('block'));
+    }
+
+    
+});
+
