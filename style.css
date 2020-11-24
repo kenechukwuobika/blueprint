@@ -1635,3 +1635,12 @@ h3.heading__trial{
     }
 }
 
+@media only screen and (max-width: 350px){
+
+    html{
+        font-size: 25%;
+    }
+
+    
+}
+
