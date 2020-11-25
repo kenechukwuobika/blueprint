@@ -152,14 +152,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* display: none; */
+    display: none;  
+    border-right: solid .2rem #eee;
 }
 
 .menu__image--close{
-    display: none;
-}
-
-.menu__toggle{
     display: none;
 }
 
@@ -342,8 +339,7 @@ div.sticky{
     line-height: 4.23rem;
     font-weight: 700;
     display: flex;
-    transform: translateY(8.2rem);
-    /* margin-top: 8.2rem; */
+    transform: translateY(8rem);
     justify-content: center;
     transition: transform .3s ease-in;
     z-index: 5;
@@ -1219,7 +1215,7 @@ h3.heading__trial{
 @media only screen and (max-width: 1270px){
 
     .info__bar{
-        transform: translateY(11.5rem);
+        transform: translateY(9.5rem);
     }
 
     .videos{
@@ -1365,7 +1361,7 @@ h3.heading__trial{
 @media only screen and (max-width: 1000px){
 
     .info__bar{
-        transform: translateY(9.5rem);
+        transform: translateY(10rem);
     }
 
     .sales__left{
@@ -1514,6 +1510,14 @@ h3.heading__trial{
 
 @media only screen and (max-width: 870px){
 
+    .info__bar{
+        transform: translateY(8rem);
+    }
+
+    .hero__heading{
+        width: 60%;   
+    }
+
     .people__cta--image{
         width: 70rem;
     }
@@ -1600,7 +1604,10 @@ h3.heading__trial{
 }
 
 @media only screen and (max-width: 550px){
-    
+
+    .hero__heading{
+        width: 50%;   
+    }
 
     .testimonials__message{
         font-size: 2.4rem;
