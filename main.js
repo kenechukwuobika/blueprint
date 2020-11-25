@@ -31,7 +31,10 @@ document.querySelector('.navbar__drop').addEventListener("click", function(e) {
 });
 
 document.querySelector('.info__bar--icon').addEventListener("click", function(e) {
-    document.querySelector('.info__bar').style.display = "none";
+    document.querySelector('.info__bar').style.transform = "translateX(-100%)";
+    setTimeout(()=>{
+        document.querySelector('.info__bar').style.visibility = "hidden";
+    }, 3000);
 });
 
 let lastScrollTop = 0;
