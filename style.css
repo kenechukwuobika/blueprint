@@ -179,7 +179,7 @@ div.sticky{
     position: fixed;
     top: 0;
     width: 100%;
-    margin-top: 0;
+    transform: translateY(0);
 }
 
 .navbar__logo{
@@ -342,9 +342,10 @@ div.sticky{
     line-height: 4.23rem;
     font-weight: 700;
     display: flex;
-    margin-top: 8.2rem;
+    transform: translateY(8.2rem);
+    /* margin-top: 8.2rem; */
     justify-content: center;
-    transition: all .3s ease-in;
+    transition: transform .3s ease-in;
     z-index: 5;
 }
 
@@ -390,7 +391,7 @@ div.sticky{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 12rem;
+    margin-top: 20rem;
 }
 
 .hero__heading{
@@ -1218,7 +1219,7 @@ h3.heading__trial{
 @media only screen and (max-width: 1270px){
 
     .info__bar{
-        margin-top: 11.5rem;
+        transform: translateY(11.5rem);
     }
 
     .videos{
@@ -1364,7 +1365,7 @@ h3.heading__trial{
 @media only screen and (max-width: 1000px){
 
     .info__bar{
-        margin-top: 9.5rem;
+        transform: translateY(9.5rem);
     }
 
     .sales__left{
@@ -1627,7 +1628,7 @@ h3.heading__trial{
 @media only screen and (max-width: 400px){
 
     .info__bar{
-        margin-top: 9rem;
+        transform: translateY(9rem);
     }
     .navbar__logo--lg{
         width: 30rem;

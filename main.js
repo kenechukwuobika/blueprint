@@ -41,8 +41,9 @@ let lastScrollTop = 0;
 
 window.addEventListener("scroll", function() {
     var st = window.pageYOffset || document.documentElement.scrollTop;
-    
+    // let offsetBottom = document.querySelector('.info__bar').offsetTop + document.querySelector('.info__bar').offsetHeight
     if (window.pageYOffset > document.querySelector('.info__bar').offsetTop) {
+
         document.querySelector('.info__bar').classList.add( 'sticky');
         header.style.transform = "translateY(-10rem)";
     } 
@@ -53,5 +54,6 @@ window.addEventListener("scroll", function() {
     if (st < lastScrollTop){
         header.style.transform = "translateY(0)";
     }
+    
      lastScrollTop = st <= 0 ? 0 : st;
 });
