@@ -342,7 +342,7 @@ div.sticky{
     line-height: 4.23rem;
     font-weight: 700;
     display: flex;
-    margin-top: 9.5rem;
+    margin-top: 8.2rem;
     justify-content: center;
     transition: margin .3s ease-in;
     z-index: 5;
@@ -1217,6 +1217,10 @@ h3.heading__trial{
 
 @media only screen and (max-width: 1270px){
 
+    .info__bar{
+        margin-top: 11.5rem;
+    }
+
     .videos{
         flex-direction: column;
     }
@@ -1358,6 +1362,10 @@ h3.heading__trial{
 }
 
 @media only screen and (max-width: 1000px){
+
+    .info__bar{
+        margin-top: 9.5rem;
+    }
 
     .sales__left{
         margin-right: 0rem;
@@ -1617,6 +1625,10 @@ h3.heading__trial{
 }
 
 @media only screen and (max-width: 400px){
+
+    .info__bar{
+        margin-top: 9rem;
+    }
     .navbar__logo--lg{
         width: 30rem;
     }
@@ -1661,19 +1673,4 @@ h3.heading__trial{
     }
 
     
-}
-
-
-.infoMoveUp{
-    animation: moveUp .7s ease-in 0s 1;
-}
-
-@keyframes moveUp{
-    0%{
-        transform: translateY(0);
-    }
-
-    100%{
-        transform: translateY(-10rem);
-    }
 }
