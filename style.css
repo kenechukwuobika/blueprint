@@ -139,7 +139,7 @@ body{
     width: 100%;
     top: 0;
     z-index: 6;
-    transition: all .6s ease-in;
+    transition: all .8s ease-in;
 }
 
 .menu__toggle{
