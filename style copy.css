@@ -487,20 +487,11 @@ div.sticky{
     z-index: 2;
 }
 
-.img__slider--item{
-    /* margin: 0 2rem; */
-    display: flex;
-    justify-content: center;
-    flex: 0 0 100%;
-    transition: all .6s ease-in;
-}
-
 .slider__images{
     position: relative;
     box-shadow: var(--box-shadow);
     transition: all .6s ease-in;
-    /* transform: translateX(50rem); */
-    width: var(--sliderImageWIdth);
+    transform: translateX(50rem);
 }
 
 .slider__images:not(:last-child){
