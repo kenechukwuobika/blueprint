@@ -499,12 +499,10 @@ div.sticky{
     position: relative;
     box-shadow: var(--box-shadow);
     transition: all .6s ease-in;
-    /* transform: translateX(50rem); */
     width: var(--sliderImageWIdth);
 }
 
 .slider__images:not(:last-child){
-   /* margin-right: 50rem; */
    margin-right: calc(width);
 }
 
