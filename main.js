@@ -36,9 +36,9 @@ document.querySelector('.info__bar--icon').addEventListener("click", function(e)
 let lastScrollTop = 0;
 
 window.addEventListener("scroll", function() {
-    var st = window.pageYOffset || document.documentElement.scrollTop;
+    var st = window.scrollY || document.documentElement.scrollTop;
     // let offsetBottom = document.querySelector('.info__bar').offsetTop + document.querySelector('.info__bar').offsetHeight
-    if (window.pageYOffset > document.querySelector('.info__bar').offsetTop) {
+    if (window.scrollY > document.querySelector('.info__bar').offsetTop) {
 
         document.querySelector('.info__bar').classList.add( 'sticky');
         header.style.transform = "translateY(-10rem)";
